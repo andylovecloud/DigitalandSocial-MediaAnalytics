@@ -9,7 +9,7 @@ client = tweepy.Client (
 )
 
 # Inform the tweed ID that you wand to delete
-tweet_id = '1850876810013049055'
+tweet_id = '1855936445694738604'
 
 # Delete the tweet using client.delete_tweet method
 response = client.delete_tweet(tweet_id)
