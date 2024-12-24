@@ -8,7 +8,7 @@ import requests
 from env import api_key
 
 # Define the URL for the News API request, including the country and API key
-url = f"https://newsapi.org/v2/everything?q=AI&sortBy=popularity&language=en&from=2024-11-14&to=2024-11-14&apiKey={api_key}"
+url = f"https://newsapi.org/v2/everything?q=AI technologies&apiKey=011fb43651994356b909c75eb1c45eb0&apiKey={api_key}"
 
 # Make a GET request to the News API
 response = requests.get(url)

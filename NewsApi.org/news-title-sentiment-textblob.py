@@ -1,8 +1,8 @@
-from newsapi import NewsApiClient
+from newsapi import NewsApiClient   
 import requests
 from env import api_key
-from textblob import TextBlob
-import matplotlib.pyplot as plt
+from textblob import TextBlob   
+import matplotlib.pyplot as plt 
 
 # Function to fetch news articles
 def fetch_news(api_key, query="AI technologies", limit=10):
@@ -29,8 +29,8 @@ def fetch_news(api_key, query="AI technologies", limit=10):
 
 # Function to perform sentiment analysis
 def analyze_sentiment(text):
-    analysis = TextBlob(text)
-    return analysis.sentiment.polarity
+    analysis = TextBlob(text)   
+    return analysis.sentiment.polarity  
 
 # Function to visualize sentiment results
 def visualize_sentiments(titles, sentiments):
@@ -57,3 +57,8 @@ if __name__ == "__main__":
         visualize_sentiments(news_titles, sentiments)
     else:
         print("No news articles found or an error occurred.")
+        
+#Sentiment analysis with TextBlob assigns a polarity score to each piece of text. This score ranges from -1 to 1:
+# -1 indicates a very negative sentiment.
+# 0 indicates a neutral sentiment.
+# 1 indicates a very positive sentiment.
